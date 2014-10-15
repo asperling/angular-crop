@@ -1,8 +1,6 @@
 Angular-crop
 ========
 
-*WIP*
-
 Angular directive that brings jCrop into Angular.
 
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
@@ -21,22 +19,7 @@ Angular directive that brings jCrop into Angular.
 
 ### Installing
 
-Use following `bower` command to install `angular-jcrop`
-
-```sh
-$ bower install angular-jcrop --save
-```
-
-It depends of angular, jquery and jquery-jcrop, so it is necessary including all libraries
-
-```html
-<link rel="stylesheet" href="bower_components/jcrop/css/jquery.Jcrop.css" />
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/jcrop/js/jquery.Jcrop.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/ng-jcrop/ng-jcrop.js"></script>
-```
+Currently **WIP**, will be published to `bower` soon.
 
 ### Usage
 
