@@ -16,7 +16,7 @@
 
         return {
             restrict: 'A',
-            scope: {ngJcrop: '=', thumbnail: '=', selection: '='},
+            scope: {ngJcrop: '=', thumbnail: '=', selection: '=', maxWidth: '=', maxHeight: '='},
             template: ngJcropTemplate,
             controller: 'JcropController'
         };
@@ -77,8 +77,8 @@
             throw new Error('ngJcrop: attribute `selection` must be an array');
         }
 
-        var MAX_WIDTH = 300,
-            MAX_HEIGHT = 200;
+        var MAX_WIDTH = $scope.maxWidth || 300,
+            MAX_HEIGHT = $scope.maxHeight || 200;
 
         /**
          * jquery element storing the main img tag
