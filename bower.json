@@ -1,8 +1,8 @@
 {
   "name": "angular-jcrop",
-  "main": "ng-jcrop.js",
+  "main": "dist/angular-crop.min.js",
   "version": "0.9.0",
-  "homepage": "https://github.com/grabbou/ng-jcrop",
+  "homepage": "https://github.com/grabbou/angular-crop",
   "authors": [
     "Mike Grabowski <grabbou@gmail.com>"
   ],

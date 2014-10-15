@@ -69,18 +69,27 @@
          * @type {jQuery}
          */
         $scope.mainImg = null;
-        $scope.imgStyle = {'width': MAX_WIDTH, 'height': MAX_HEIGHT};
+
+        $scope.imgStyle = {
+            width: MAX_WIDTH,
+            height: MAX_HEIGHT
+        };
 
         /**
          * jquery element storing the preview img tag
          * @type {jQuery}
          */
         $scope.previewImg = null;
-        $scope.previewImgStyle = {'width': '100px', 'height': '100px', 'overflow': 'hidden', 'margin-left': '5px'};
+
+        $scope.previewImgStyle = {
+            width: '100px',
+            height: '100px',
+            overflow: 'hidden',
+            'margin-left': '5px'
+        };
 
         /**
          * Stores the jcrop instance
-         * @type {jCrop}
          */
         $scope.jcrop = null;
 
@@ -133,8 +142,8 @@
                 return;
             }
 
-            var rx = 100 / coords.w;
-            var ry = 100 / coords.h;
+            var rx = 100 / coords.w,
+                ry = 100 / coords.h;
 
             $scope.previewImg.css({
                 width: Math.round(rx * $scope.imgStyle.width) + 'px',
@@ -150,14 +159,15 @@
          * @event
          */
         $scope.onMainImageLoad = function(ev) {
-            $scope.mainImg.off('load', $scope.onMainImageLoad);
-            $scope.updateCurrentSizes($scope.mainImg[0]);
 
             var config = {
                 onChange: $scope.showPreview,
                 onSelect: $scope.showPreview,
                 aspectRatio: 1
             };
+
+            $scope.mainImg.off('load', $scope.onMainImageLoad);
+            $scope.updateCurrentSizes($scope.mainImg[0]);
 
             if ($scope.selection.length === 6) {
                 config.setSelect = $scope.selection;
@@ -181,6 +191,9 @@
          * @init
          */
         $scope.init = function(src) {
+
+            var thumbnailWrapper = $element.find('.ng-jcrop-thumbnail-wrapper');
+
             $scope.destroy();
 
             $scope.mainImg = $('<img>').addClass('ng-jcrop-image');
@@ -188,9 +201,10 @@
             $scope.mainImg.css({ maxWidth: MAX_WIDTH, maxHeight: MAX_HEIGHT });
             $scope.mainImg.attr('src', src);
 
-            $element.find('.ng-jcrop-image-wrapper').empty().append($scope.mainImg);
+            $element.find('.ng-jcrop-image-wrapper')
+                .empty()
+                .append($scope.mainImg);
 
-            var thumbnailWrapper = $element.find('.ng-jcrop-thumbnail-wrapper');
             $scope.previewImg = $element.find('.ng-jcrop-thumbnail');
 
             if ($scope.thumbnail) {

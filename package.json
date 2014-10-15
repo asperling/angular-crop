@@ -1,32 +1,29 @@
 {
   "name": "ng-jcrop",
   "version": "0.0.0",
-  "description": "ng-jcrop ========",
-  "main": "ng-jcrop.js",
-  "dependencies": {
-    "karma": "~0.12.21",
-    "bower": "~1.3.9"
-  },
+  "description": "Angular directive that brings jCrop functionallity into Angular",
+  "main": "dist/angular-jcrop.min.js",
+  "dependencies": {},
   "devDependencies": {
-    "karma": "~0.12.21",
-    "karma-chrome-launcher": "~0.1.4",
-    "karma-jasmine": "~0.1.5",
-    "karma-phantomjs-launcher": "~0.1.4",
-    "karma-coverage": "~0.2.6",
-    "coveralls": "~2.11.1",
-    "karma-coveralls": "~0.1.4"
+    "gulp": "^3.8.8",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.5",
+    "gulp-linker": "^0.1.7",
+    "gulp-notify": "^2.0.0",
+    "jshint-stylish": "^1.0.0",
+    "npm": "^1.4.27"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/andrefarzat/ng-jcrop.git"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "Mike Grabowski <@grabbou>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrefarzat/ng-jcrop/issues"
+    "url": "https://github.com/grabbou/angular-crop/issues"
   },
-  "homepage": "https://github.com/andrefarzat/ng-jcrop"
+  "homepage": "https://github.com/grabbou/angular-crop"
 }
