@@ -15,14 +15,14 @@ Angular directive that brings jCrop into Angular.
     - [Legacy notes](#user-content-legacy-notes)
         - [Licence](#user-content-licence)
         - [History](#user-content-history)
+    - [Roadmap](#user-content-roadmap)
 
 ### Installing
 
-Although it should be production ready, it's currently **WIP**, will be published to `bower` soon.
-
 To download it now, simply do the following:
+
 ```bash
-$  bower install https://github.com/grabbou/angular-crop.git#1.0.4 --save
+$  bower install angular-crop --save
 ```
 
 After that, remember to include following files in your template (or if you are using something like `main-bower-files` for gulp - just run it).
@@ -93,3 +93,11 @@ As original repository has been licensed under GPL license and that was changed 
 #### History
 
 As original repository seems to be abandoned, the purpose of this fork is to carry on further development to allow easy usage of JCrop in other projects.
+
+### Roadmap
+
+- Following things are included in the roadmap
+    - add ability to upload files (HTML5 input)
+    - add extra parameter 'thumbnail' to display preview of cropped image
+    - ability to export image as base64 string
+    - you tell me
