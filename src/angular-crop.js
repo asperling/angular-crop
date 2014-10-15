@@ -24,13 +24,13 @@
                     setSelect: $scope.setSelect,
                     aspectRatio: $scope.aspectRatio,
                     trackDocument: true
-                }, function () {
+                }, function() {
                     _instance = this;
                 });
             }
 
             // call init when image has loaded
-            $element.on('load', function () {
+            $element.on('load', function() {
                 init();
             });
 

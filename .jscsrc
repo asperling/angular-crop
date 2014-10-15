@@ -1,5 +1,6 @@
 {
     "preset": "airbnb",
     "validateIndentation": 4,
-    "requireLineFeedAtFileEnd": null
+    "requireLineFeedAtFileEnd": null,
+    "safeContextKeyword": ["_this", "_instance"]
 }
