@@ -1,8 +1,8 @@
 {
-  "name": "ng-jcrop",
-  "version": "0.0.0",
+  "name": "angular-crop",
+  "version": "1.0.0",
   "description": "Angular directive that brings jCrop functionallity into Angular",
-  "main": "dist/angular-jcrop.min.js",
+  "main": "src/angular-crop.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.8",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/andrefarzat/ng-jcrop.git"
+    "url": "git://github.com/grabbou/angular-crop.git"
   },
   "author": "Mike Grabowski <@grabbou>",
   "license": "MIT",
