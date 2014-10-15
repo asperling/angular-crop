@@ -18,7 +18,12 @@ Angular directive that brings jCrop into Angular.
 
 ### Installing
 
-Currently **WIP**, will be published to `bower` soon.
+Although it should be production ready, it's currently **WIP**, will be published to `bower` soon.
+
+To download it now, simply do the following:
+```bash
+$  bower install https://github.com/grabbou/angular-crop.git#1.0.4 --save
+```
 
 ### Usage
 
