@@ -1,6 +1,6 @@
 {
   "name": "angular-jcrop",
-  "main": "dist/angular-crop.min.js",
+  "main": "src/angular-crop.js",
   "version": "0.9.0",
   "homepage": "https://github.com/grabbou/angular-crop",
   "authors": [
@@ -20,7 +20,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src"
   ],
   "dependencies": {
     "jquery": "*",
