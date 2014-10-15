@@ -1,7 +1,7 @@
 {
   "name": "angular-crop",
   "main": "src/angular-crop.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/grabbou/angular-crop",
   "authors": [
     "Mike Grabowski <grabbou@gmail.com>"
