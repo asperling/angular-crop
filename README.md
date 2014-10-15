@@ -66,7 +66,7 @@ Callbacks should be passed as e.g. `data-on-change="myScopeOnChangeMethod"`. Eve
 
 ### Contributing
 
-This repository uses `Airbnb` javascript style guide along with `jscs` tests to make sure all the requirements are fulfilled. Before doing a pull request, please double check your code.
+This repository uses [**Airbnb** javascript](https://github.com/airbnb/javascript) style guide along with `jscs` tests to make sure all the requirements are fulfilled. Before doing a pull request, please double check your code.
 
 ### Legacy notes
 
