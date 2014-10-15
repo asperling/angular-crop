@@ -60,14 +60,3 @@ Required. Must be an array `[x, y, x2, y2, w, h]`.
 
 `Number`. Set to override default max height of an image. Defaults to 200.
 
-### Testing
-
-It is necessary install karma and its dependencies
-```shell
-npm install
-```
-
-Then you can run the tests
-```shell
-npm test
-```
