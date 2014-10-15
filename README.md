@@ -8,14 +8,14 @@ Angular directive that brings jCrop into Angular.
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [angular-jcrop](#user-content-angular-jcrop)
-		- [License note](#user-content-license-note)
-		- [Installing](#user-content-installing)
-		- [Usage](#user-content-usage)
-		- [Configuration](#user-content-configuration)
-			- [selection](#user-content-selection)
-			- [maxWidth](#user-content-maxwidth)
-			- [maxHeight](#user-content-maxheight)
-		- [Contributing](#user-content-contributing)
+    - [License note](#user-content-license-note)
+    - [Installing](#user-content-installing)
+    - [Usage](#user-content-usage)
+    - [Configuration](#user-content-configuration)
+        - [selection](#user-content-selection)
+        - [maxWidth](#user-content-maxwidth)
+        - [maxHeight](#user-content-maxheight)
+    - [Contributing](#user-content-contributing)
 
 ### Installing
 
