@@ -13,7 +13,7 @@ Angular directive to jCrop jQuery plugin
 Install via `bower`
 
 ```sh
-bower install ng-jcrop --save
+$ bower install ng-jcrop --save
 ```
 
 
@@ -54,7 +54,7 @@ angular.controller('SomeController', function($scope){
 </script>
 
 
-<div ng-jcrop="obj.src" selection="obj.coords" thumbnail="obj.thumbnail"></div>
+<div ng-jcrop="obj.src" data-selection="obj.coords" data-thumbnail="obj.thumbnail"></div>
 ````
 
 ### Testing
