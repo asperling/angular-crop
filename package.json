@@ -1,6 +1,6 @@
 {
   "name": "angular-crop",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Angular directive that brings jCrop functionallity into Angular",
   "main": "src/angular-crop.js",
   "dependencies": {},
