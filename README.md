@@ -25,6 +25,17 @@ To download it now, simply do the following:
 $  bower install https://github.com/grabbou/angular-crop.git#1.0.4 --save
 ```
 
+After that, remember to include following files in your template (or if you are using something like `main-bower-files` for gulp - just run it).
+
+```html
+<link rel="stylesheet" href="bower_components/jcrop/css/jquery.Jcrop.css" />
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jcrop/js/jquery.Jcrop.js"></script>
+<script src="bower_components/ng-jcrop/ng-jcrop.js"></script>
+```
+
 ### Usage
 
 First of all, add `angular-crop` as dependency to your existing application by doing the following:
