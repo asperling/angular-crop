@@ -1,12 +1,13 @@
 {
   "name": "ng-jcrop",
   "main": "ng-jcrop.js",
-  "version": "1.0.0",
-  "homepage": "https://github.com/andrefarzat/ng-jcrop",
+  "version": "0.9.0",
+  "homepage": "https://github.com/grabbou/ng-jcrop",
   "authors": [
-    "Andre Farzat <andrefarzat@gmail.com>"
+    "Andre Farzat <andrefarzat@gmail.com>",
+    "Mike Grabowski <grabbou@gmail.com>"
   ],
-  "description": "Angular directive to jCrop jQuery plugin",
+  "description": "Angular wrapper for jCrop directive",
   "keywords": [
     "angular",
     "directive",
@@ -25,7 +26,9 @@
   "dependencies": {
     "jquery": "*",
     "angular": "*",
-    "jcrop": "~0.9.12",
+    "jcrop": "~0.9.12"
+  },
+  "devDependencies": {
     "angular-mocks": "*"
   }
 }

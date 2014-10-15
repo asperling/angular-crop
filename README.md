@@ -13,7 +13,7 @@ Angular directive to jCrop jQuery plugin
 Install via `bower`
 
 ```sh
-bower install ng-jcrop --save
+$ bower install ng-jcrop --save
 ```
 
 
@@ -30,41 +30,33 @@ It depends of angular, jquery and jquery-jcrop, so it is necessary including all
 
 ### Usage
 
+First of all, add `ngJcrop` as dependency to your existing application by doing the following:
+
 ```js
-// add 'ngJcrop' as dependency to your module
 var yourModule = angular.module("yourModule", ['ngJcrop']);
 ```
 
-And add the `ng-jcrop` directive in an `<div>` giving the
-image's src as the value
+Next, apply `ng-jcrop` directive on any `<div>` element inside your template, like so:
+
 ```html
-<script>
-angular.controller('SomeController', function($scope){
-    $scope.obj = {}
-
-    // The url or the data64 for the image
-    $scope.obj.src = 'beautifulImage.jpg';
-
-    // Must be [x, y, x2, y2, w, h]
-    $scope.obj.coords = [100, 100, 200, 200, 100, 100];
-
-    // You can add a thumbnail if you want
-    $scope.obj.thumbnail = true;
-});
-</script>
-
-
-<div ng-jcrop="obj.src" selection="obj.coords" thumbnail="obj.thumbnail"></div>
+<div ng-jcrop="{{ imageUrl }}" data-selection="{{ coordinates }}"></div>
 ````
 
-### Testing
+Note that `data-selection` attribute is required for the directive to run.
 
-It is necessary install karma and its dependencies
-```shell
-npm install
-```
+### Configuration
 
-Then you can run the tests
-```shell
-npm test
-```
+Following attributes can be used with `ng-jcrop` directive to tweak its behaviour.
+
+#### selection
+
+Required. Must be an array `[x, y, x2, y2, w, h]`.
+
+#### maxWidth
+
+`Number`. Set to override default max width of an image. Defaults to 300.
+
+#### maxHeight
+
+`Number`. Set to override default max height of an image. Defaults to 200.
+
