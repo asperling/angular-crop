@@ -9,9 +9,8 @@ Angular directive that brings jCrop into Angular.
     - [Installing](#user-content-installing)
     - [Usage](#user-content-usage)
     - [Configuration](#user-content-configuration)
-        - [selection](#user-content-selection)
-        - [maxWidth](#user-content-maxwidth)
-        - [maxHeight](#user-content-maxheight)
+        - [Settings](#user-content-settings)
+        - [Events](#user-content-events)
     - [Contributing](#user-content-contributing)
     - [Legacy notes](#user-content-legacy-notes)
         - [Licence](#user-content-licence)
@@ -23,35 +22,47 @@ Currently **WIP**, will be published to `bower` soon.
 
 ### Usage
 
-First of all, add `ngJcrop` as dependency to your existing application by doing the following:
+First of all, add `angular-crop` as dependency to your existing application by doing the following:
 
 ```js
-var yourModule = angular.module("yourModule", ['ngJcrop']);
+var yourModule = angular.module("yourModule", ['angular-crop']);
 ```
 
-Next, apply `ng-jcrop` directive on any `<div>` element inside your template, like so:
+Next, apply `angular-crop` directive on any `<img>` element inside your template, like so:
 
 ```html
-<div ng-jcrop="{{ imageUrl }}" data-selection="{{ coordinates }}"></div>
+<img ng-src="{{ imageUrl }}" angular-crop></div>
 ````
-
-Note that `data-selection` attribute is required for the directive to run.
 
 ### Configuration
 
-Following attributes can be used with `ng-jcrop` directive to tweak its behaviour.
+#### Settings
 
-#### selection
+All the attributes specified by `jcrop` docs are available.
 
-Required. Must be an array `[x, y, x2, y2, w, h]`.
+For further explanation please refer to its documentation [here](http://deepliquid.com/content/Jcrop_Manual.html#Setting_Options).
 
-#### maxWidth
+#### Events
 
-`Number`. Set to override default max width of an image. Defaults to 300.
+Same as above.
 
-#### maxHeight
+- Following callbacks are available:
+    - onChange - *called on every crop change*
+    - onRelease - *called on focus out when cropping is finished*
+    - onSelect - *called when cropping has stopped but area is still focused*
 
-`Number`. Set to override default max height of an image. Defaults to 200.
+Callbacks should be passed as e.g. `data-on-change="myScopeOnChangeMethod"`. Every callback receives `coordinates` argument that looks like below:
+
+```js
+{
+    h: 149
+    w: 187
+    x: 201
+    x2: 388
+    y: 52
+    y2: 201
+}
+```
 
 ### Contributing
 
@@ -61,7 +72,7 @@ This repository uses `Airbnb` javascript style guide along with `jscs` tests to 
 
 #### Licence
 
-As original repository has been licensed under GPL license and that was changed here to MIT, the whole project will be rewritten from scratch to avoid any legacy issues that may occur in the future. Feel free after reading contributors note to help with that process.
+As original repository has been licensed under GPL license and that was changed here to MIT, the whole project has been rewritten from scratch to avoid any legacy issues that may occur in the future. Although to appreciate original author efforts and in order to say thank you for inspiration he gave me I've decided to fork his repository instead of creating a new one.
 
 #### History
 
