@@ -9,7 +9,7 @@ Angular directive to jCrop jQuery plugin
 
 ### License note
 
-As original repository has been licensed under GNU license and that was changed here to MIT, the whole project will be rewritten from scratch to avoid any legacy issues that may occur in the future. Feel free after reading contributors note to help with that process.
+As original repository has been licensed under GPL license and that was changed here to MIT, the whole project will be rewritten from scratch to avoid any legacy issues that may occur in the future. Feel free after reading contributors note to help with that process.
 
 ### Installing
 
