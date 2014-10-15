@@ -15,13 +15,6 @@
         }
     }]);
 
-    module.directive('angularCropInput', function() {
-        return {
-            restrict: 'A',
-            controller: 'JcropInputController'
-        };
-    });
-
     module.value('angularCropTemplate',
         '<div class="angular-crop">' +
             '    <div class="angular-crop-image-wrapper">' +
