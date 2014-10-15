@@ -1,21 +1,23 @@
-[![Build Status](https://travis-ci.org/andrefarzat/ng-jcrop.svg?branch=master)](https://travis-ci.org/andrefarzat/ng-jcrop)
-[![Coverage Status](https://coveralls.io/repos/andrefarzat/ng-jcrop/badge.png)](https://coveralls.io/r/andrefarzat/ng-jcrop)
-[![Code Climate](https://codeclimate.com/github/andrefarzat/ng-jcrop/badges/gpa.svg)](https://codeclimate.com/github/andrefarzat/ng-jcrop)
+**Note:** As original repository seems to be abandoned, the purpose of this fork is to carry on further development to allow easy usage of JCrop in other projects.
 
-ng-jcrop
+angular-jcrop
 ========
+
+*WIP*
 
 Angular directive to jCrop jQuery plugin
 
+### License note
+
+As original repository has been licensed under GNU license and that was changed here to MIT, the whole project will be rewritten from scratch to avoid any legacy issues that may occur in the future. Feel free after reading contributors note to help with that process.
 
 ### Installing
 
-Install via `bower`
+Use following `bower` command to install `angular-jcrop`
 
 ```sh
-$ bower install ng-jcrop --save
+$ bower install angular-jcrop --save
 ```
-
 
 It depends of angular, jquery and jquery-jcrop, so it is necessary including all libraries
 
@@ -60,3 +62,6 @@ Required. Must be an array `[x, y, x2, y2, w, h]`.
 
 `Number`. Set to override default max height of an image. Defaults to 200.
 
+### Contributing
+
+This repository uses `Airbnb` javascript style guide along with `jscs` tests to make sure all the requirements are fulfilled. Before doing a pull request, please double check your code.
