@@ -1,15 +1,21 @@
-**Note:** As original repository seems to be abandoned, the purpose of this fork is to carry on further development to allow easy usage of JCrop in other projects.
-
-angular-jcrop
+Angular-crop
 ========
 
 *WIP*
 
-Angular directive to jCrop jQuery plugin
+Angular directive that brings jCrop into Angular.
 
-### License note
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-As original repository has been licensed under GPL license and that was changed here to MIT, the whole project will be rewritten from scratch to avoid any legacy issues that may occur in the future. Feel free after reading contributors note to help with that process.
+- [angular-jcrop](#user-content-angular-jcrop)
+		- [License note](#user-content-license-note)
+		- [Installing](#user-content-installing)
+		- [Usage](#user-content-usage)
+		- [Configuration](#user-content-configuration)
+			- [selection](#user-content-selection)
+			- [maxWidth](#user-content-maxwidth)
+			- [maxHeight](#user-content-maxheight)
+		- [Contributing](#user-content-contributing)
 
 ### Installing
 
@@ -65,3 +71,13 @@ Required. Must be an array `[x, y, x2, y2, w, h]`.
 ### Contributing
 
 This repository uses `Airbnb` javascript style guide along with `jscs` tests to make sure all the requirements are fulfilled. Before doing a pull request, please double check your code.
+
+### Legacy notes
+
+#### Licence
+
+As original repository has been licensed under GPL license and that was changed here to MIT, the whole project will be rewritten from scratch to avoid any legacy issues that may occur in the future. Feel free after reading contributors note to help with that process.
+
+#### History
+
+As original repository seems to be abandoned, the purpose of this fork is to carry on further development to allow easy usage of JCrop in other projects.
