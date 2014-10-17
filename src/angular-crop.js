@@ -23,6 +23,9 @@
                     bgOpacity: $scope.bgOpacity,
                     setSelect: $scope.setSelect,
                     aspectRatio: $scope.aspectRatio,
+                    boxWidth: $scope.boxWidth,
+                    boxHeight: $scope.boxHeight,
+                    trueSize: [$element[0].naturalWidth, $element[0].naturalHeight],
                     trackDocument: true
                 }, function() {
                     _instance = this;
@@ -47,6 +50,8 @@
                 bgOpacity: '=',
                 setSelect: '=',
                 aspectRatio: '=',
+                boxWidth: '=',
+                boxHeight: '=',
                 onChange: '&',
                 onSelect: '&',
                 onRelease: '&'
