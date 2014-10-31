@@ -25,6 +25,7 @@
                     aspectRatio: $scope.aspectRatio,
                     boxWidth: $scope.boxWidth,
                     boxHeight: $scope.boxHeight,
+                    keySupport: $scope.keySupport,
                     trueSize: [$element[0].naturalWidth, $element[0].naturalHeight],
                     trackDocument: true
                 }, function() {
@@ -34,9 +35,11 @@
 
             // call init when image has loaded
             $element.on('load', function() {
+                if (_instance) {
+                    _instance.destroy();
+                }
                 init();
             });
-
         }
     ]);
 
@@ -52,9 +55,10 @@
                 aspectRatio: '=',
                 boxWidth: '=',
                 boxHeight: '=',
+                keySupport: '=',
                 onChange: '&',
                 onSelect: '&',
-                onRelease: '&'
+                onRelease: '&',
             },
             controller: 'angularCropCtrl'
         };
